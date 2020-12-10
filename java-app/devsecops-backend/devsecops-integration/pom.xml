@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>dev.kolaxis</groupId>
+		<artifactId>devsecopsbackend</artifactId>
+		<version>${revision}${changelist}</version>
+	</parent>
+
+	<artifactId>devsecopsintegration</artifactId>
+	<name>devsecopsintegration</name>
+	<packaging>jar</packaging>
+
+	<dependencies>
+		<dependency>
+			<groupId>dev.kolaxis</groupId>
+			<artifactId>devsecops-integration</artifactId>
+			<version>${devsecops.core.version}</version>
+			<exclusions>
+				<exclusion>
+					<groupId>dev.kolaxis</groupId>
+					<artifactId>devsecops-business</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+		<dependency>
+			<groupId>dev.kolaxis</groupId>
+			<artifactId>devsecopsbusiness</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		 <dependency>
+	        <groupId>org.apache.cxf</groupId>
+	        <artifactId>cxf-rt-transports-http-jetty</artifactId>
+	     	<scope>test</scope>
+	    </dependency>
+	</dependencies>
+
+
+	<build>
+		<plugins>
+			<plugin>
+				<artifactId>maven-resources-plugin</artifactId>
+				<version>2.5</version>
+				<executions>
+					<execution>
+						<id>copy-resources</id>
+						<phase>process-classes</phase>
+						<goals>
+							<goal>copy-resources</goal>
+						</goals>
+						<configuration>
+							<outputDirectory>${project.build.outputDirectory}</outputDirectory>
+							<resources>
+								<resource>
+									<directory>${project.build.directory}/generated-resources</directory>
+									<filtering>false</filtering>
+									<excludes>
+										<exclude>**/.copyarea.db</exclude>
+									</excludes>
+								</resource>
+							</resources>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>
+ 

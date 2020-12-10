@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>dev.kolaxis</groupId>
+		<artifactId>devsecopsbackend</artifactId>
+		<version>${revision}${changelist}</version>
+	</parent>
+
+	<artifactId>devsecopsbusiness</artifactId>
+	<name>devsecopsbusiness</name>
+	<packaging>jar</packaging>
+
+	<dependencies>
+		<dependency>
+			<groupId>dev.kolaxis</groupId>
+			<artifactId>devsecopsdomain</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.drools</groupId>
+			<artifactId>drools-core</artifactId>
+			<version>6.0.1.Final</version>
+		</dependency>
+		<dependency>
+			<groupId>dev.kolaxis</groupId>
+			<artifactId>devsecops-comm</artifactId>
+			<version>v1.0.18.8-ng911-SNAPSHOT</version>
+		</dependency>
+	</dependencies>
+ 
+	<build>
+		<plugins>
+		<!-- 	<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-ejb-plugin</artifactId>
+				<configuration>
+					<ejbVersion>3.0</ejbVersion>
+					<archive>
+						<manifestEntries>
+							<Specification-Version>${project.version}</Specification-Version>
+							<Implementation-Version>${project.version}</Implementation-Version>
+							<Extension-Name>${project.name}</Extension-Name>
+						</manifestEntries>
+					</archive>
+				</configuration>
+			</plugin> -->
+		</plugins>
+	</build>
+</project>
+ 

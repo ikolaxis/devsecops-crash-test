@@ -1,0 +1,41 @@
+{
+  "name": "angularjs",
+  "description": "AngularJS",
+  "version": "0.1.1",
+  "authors": [
+    "Ioannis L. Kolaxis"
+  ],
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "angular": "~1.5.11",
+    "angular-animate": "~1.5.11",
+    "angular-mocks": "~1.5.11",
+    "angular-bootstrap": "~1.2.5",
+    "angular-filter": "~0.5.4",
+    "angular-bootstrap-datetimepicker": "~1.0.1",
+    "angular-date-time-input": "~1.0.0",
+    "angular-ui-router": "~0.2.14",
+    "angular-ui-grid": "3.0.5",
+    "restangular": "~1.4.0",
+    "angular-local-storage": "~0.1.5",
+    "selectize": "~0.8.5",
+    "ui-router-extras": "~0.0.13",
+    "stomp-websocket": "~2.3.4",
+    "sockjs": "~0.3.4",
+    "d3": "~3.5.6",
+    "moment": "~2.11.2",
+    "less": "~2.6.1",
+    "bootstrap-less-only": "~3.3.6",
+    "angular-sanitize": "~1.5.11",
+    "angular-messages": "~1.5.11",
+    "AngularStompDK": "^0.8.2",
+    "angular-wizard": "^0.6.1",
+    "ngCapsLock": "ng-caps-lock#^1.0.2",
+    "angular-resource": "~1.5.11",
+    "angular-bootstrap-toggle": "^0.4.2"
+  },
+  "resolutions": {
+    "angular": "~1.5.11"
+  }
+}

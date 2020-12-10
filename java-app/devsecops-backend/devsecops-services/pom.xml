@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>dev.kolaxis</groupId>
+		<artifactId>devsecopsbackend</artifactId>
+		<version>${revision}${changelist}</version>
+	</parent>
+
+	<artifactId>devsecopsservices</artifactId>
+	<name>devsecopsservices</name>
+	<packaging>jar</packaging>
+
+	<dependencies>
+		<dependency>
+			<groupId>dev.kolaxis</groupId>
+			<artifactId>devsecops-services</artifactId>
+			<version>${devsecops.core.version}</version>
+			<exclusions>
+				<exclusion>
+					<groupId>dev.kolaxis</groupId>
+					<artifactId>devsecops-domain</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+	 	<dependency>
+			<groupId>dev.kolaxis</groupId>
+			<artifactId>devsecopsintegration</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>servlet-api</artifactId>
+		</dependency>
+<!-- 		<dependency>
+		    <groupId>com.sun.jersey.contribs</groupId>
+		    <artifactId>jersey-multipart</artifactId>
+		    <version>1.18</version>
+		    <scope>test</scope>
+		</dependency> -->
+		<dependency>
+		    <groupId>com.sun.jersey</groupId>
+		    <artifactId>jersey-json</artifactId>
+		    <version>1.18</version>
+		    <scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>com.sun.jersey.jersey-test-framework</groupId>
+			<artifactId>jersey-test-framework-grizzly2</artifactId>
+			<version>1.18</version>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
+ 
+	<build>
+		<plugins>
+		<!-- 	<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-ejb-plugin</artifactId>
+				<configuration>
+					<ejbVersion>3.0</ejbVersion>
+					<archive>
+						<manifestEntries>
+							<Specification-Version>${project.version}</Specification-Version>
+							<Implementation-Version>${project.version}</Implementation-Version>
+							<Extension-Name>${project.name}</Extension-Name>
+						</manifestEntries>
+					</archive>
+				</configuration>
+			</plugin> -->
+		</plugins>
+	</build>
+</project>
+ 

@@ -46,7 +46,7 @@
     "karma-phantomjs-launcher": "0.2.1",
     "karma-spec-reporter": "0.0.26",
     "load-grunt-config": "0.16.0",
-    "phantomjs": "1.9.18"
+    "phantomjs": "2.1.7"
   },
   "dependencies": {
     "array-flatten": "1.1.1",

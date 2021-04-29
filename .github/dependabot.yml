@@ -1,0 +1,62 @@
+version: 2
+updates:
+- package-ecosystem: maven
+  directory: "/java-app"
+  schedule:
+    interval: daily
+    time: "03:00"
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: com.fasterxml.jackson.core:jackson-databind
+    versions:
+    - 2.12.1
+    - 2.12.2
+  - dependency-name: com.fasterxml.jackson.module:jackson-module-jaxb-annotations
+    versions:
+    - 2.12.1
+    - 2.12.2
+  - dependency-name: com.fasterxml.jackson.jaxrs:jackson-jaxrs-json-provider
+    versions:
+    - 2.12.1
+    - 2.12.2
+  - dependency-name: com.fasterxml.jackson.core:jackson-core
+    versions:
+    - 2.12.1
+    - 2.12.2
+  - dependency-name: com.fasterxml.jackson.datatype:jackson-datatype-hibernate4
+    versions:
+    - 2.12.1
+    - 2.12.2
+  - dependency-name: org.springframework.security:spring-security-ldap
+    versions:
+    - 5.4.2
+    - 5.4.4
+    - 5.4.5
+  - dependency-name: org.springframework.security:spring-security-config
+    versions:
+    - 5.4.2
+    - 5.4.4
+    - 5.4.5
+  - dependency-name: org.springframework.security:spring-security-web
+    versions:
+    - 5.4.2
+    - 5.4.4
+    - 5.4.5
+  - dependency-name: org.springframework.security:spring-security-core
+    versions:
+    - 5.4.2
+    - 5.4.4
+    - 5.4.5
+- package-ecosystem: npm
+  directory: "/angularjs"
+  schedule:
+    interval: daily
+    time: "03:00"
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: lodash
+    versions:
+    - 4.17.20
+  - dependency-name: grunt-contrib-less
+    versions:
+    - 2.0.0

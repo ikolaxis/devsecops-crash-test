@@ -30,8 +30,8 @@
 		<downloadSources>true</downloadSources>
 
 		<!-- Core libraries versions -->
-		<spring.version>4.0.1.RELEASE</spring.version>
-		<spring.security.version>3.2.6.RELEASE</spring.security.version>
+		<spring.version>5.2.15.RELEASE</spring.version>
+		<spring.security.version>4.0.1.RELEASE</spring.security.version>
 		<javasimon.version>3.5.1</javasimon.version>
 		<camel.version>3.7.1</camel.version>
 		<jackson.version>2.5.3</jackson.version>

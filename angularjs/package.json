@@ -52,6 +52,6 @@
     "array-flatten": "1.1.1",
     "content-type": "1.0.1",
     "lodash": "3.10.1",
-    "swagger-express-middleware": "1.0.0-alpha.12"
+    "swagger-express-middleware": "3.0.0"
   }
 }
